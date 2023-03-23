@@ -1,4 +1,5 @@
 import 'package:first_task_hard/widgets/coin_balance_tile_widget.dart';
+import 'package:first_task_hard/widgets/level_tile_widget.dart';
 import 'package:first_task_hard/widgets/profile_tile_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,12 @@ class MainScreen extends StatelessWidget {
               Positioned(
                 child: CoinBalanceTileWidget(),
               ),
-              Positioned(child: ProfileTileWidget())
+              Positioned(
+                child: ProfileTileWidget(),
+              ),
+              Positioned(
+                child: LevelTileWidget(),
+              ),
             ],
           ),
         ));
