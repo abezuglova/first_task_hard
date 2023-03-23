@@ -14,15 +14,22 @@ class CrystalBalanceTileWidget extends StatelessWidget {
       tileHeight: 169.63.h,
       child: Column(
         children: [
-          Text(
-            'Баланс кристаллов: 200 💎',
-            style: textTheme.headlineSmall,
-          ),
-          ElevatedButton(
-            onPressed: () {},
+          Padding(
+            padding: EdgeInsets.fromLTRB(11.w, 23.25.h, 11.w, 18.h),
             child: Text(
-              'Потратить',
-              style: textTheme.labelSmall,
+              'Баланс кристаллов: 200 💎',
+              style: textTheme.headlineSmall,
+            ),
+          ),
+          SizedBox(
+            width: 119.85.w,
+            height: 43.h,
+            child: ElevatedButton(
+              onPressed: () {},
+              child: Text(
+                'Потратить',
+                style: textTheme.labelSmall,
+              ),
             ),
           ),
         ],

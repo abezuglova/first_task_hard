@@ -14,15 +14,21 @@ class CoinBalanceTileWidget extends StatelessWidget {
       tileHeight: 122.h,
       child: Column(
         children: [
+          SizedBox(height: 16.h),
           Text(
             'Баланс монет: 1500 💸',
             style: textTheme.headlineSmall,
           ),
-          ElevatedButton(
-            onPressed: () {},
-            child: Text(
-              'Потратить',
-              style: textTheme.labelSmall,
+          SizedBox(height: 16.85.h,),
+          SizedBox(
+            width: 186.w,
+            height: 43.h,
+            child: ElevatedButton(
+              onPressed: () {},
+              child: Text(
+                'Потратить',
+                style: textTheme.labelSmall,
+              ),
             ),
           ),
         ],

@@ -12,9 +12,11 @@ class SectionsTileWidget extends StatelessWidget {
       rotateAngle: -3.75,
       tileWidth: 175.49.w,
       tileHeight: 73.81.h,
-      child: Text(
-        'Секции',
-        style: textTheme.headlineSmall,
+      child: Center(
+        child: Text(
+          'Секции',
+          style: textTheme.headlineSmall,
+        ),
       ),
     );
   }

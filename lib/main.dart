@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(411, 868),
+      designSize: const Size(411, 823),
       splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp(
@@ -73,4 +73,5 @@ class MyApp extends StatelessWidget {
 // 10:15 - 10:55
 // 11:00 - 12:00
 // 12:05 - 12:45
-// 12:50 - 
+// 12:50 - 13:40
+// 14:00

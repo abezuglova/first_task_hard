@@ -12,9 +12,11 @@ class MyShiftsTileWidget extends StatelessWidget {
       rotateAngle: 2.32,
       tileWidth: 175.49.w,
       tileHeight: 73.81.h,
-      child: Text(
-        'Мои смены',
-        style: textTheme.headlineSmall,
+      child: Center(
+        child: Text(
+          'Мои смены',
+          style: textTheme.headlineSmall,
+        ),
       ),
     );
   }

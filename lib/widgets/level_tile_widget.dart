@@ -15,11 +15,12 @@ class LevelTileWidget extends StatelessWidget {
       tileHeight: 122.h,
       child: Column(
         children: [
+          SizedBox(height: 16.h),
           Text(
             'Уровень достижений: 5',
             style: textTheme.headlineSmall,
           ),
-          SizedBox(height: 20.h),
+          SizedBox(height: 30.h),
           Stack(
             children: [
               Container(
