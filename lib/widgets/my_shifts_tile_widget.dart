@@ -8,14 +8,17 @@ class MyShiftsTileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
-    return TileWidget(
-      rotateAngle: 2.32,
-      tileWidth: 175.49.w,
-      tileHeight: 73.81.h,
-      child: Center(
-        child: Text(
-          'Мои смены',
-          style: textTheme.headlineSmall,
+    return GestureDetector(
+      onTap: () {},
+      child: TileWidget(
+        rotateAngle: 2.32,
+        tileWidth: 175.49.w,
+        tileHeight: 73.81.h,
+        child: Center(
+          child: Text(
+            'Мои смены',
+            style: textTheme.headlineSmall,
+          ),
         ),
       ),
     );

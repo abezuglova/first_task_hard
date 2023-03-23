@@ -22,10 +22,13 @@ class TimetableTileWidget extends StatelessWidget {
               '13:15 Обед',
               style: textTheme.headlineMedium,
             ),
-            const Icon(
-              Icons.arrow_forward,
-              color: AppColors.mainTextColor,
-              size: 36,
+            TextButton(
+              onPressed: () {},
+              child: const Icon(
+                Icons.arrow_forward,
+                color: AppColors.mainTextColor,
+                size: 36,
+              ),
             )
           ],
         ),

@@ -30,6 +30,13 @@ class MyApp extends StatelessWidget {
                 elevation: 0,
               ),
             ),
+            textButtonTheme: TextButtonThemeData(
+              style: TextButton.styleFrom(
+                padding: EdgeInsets.zero,
+                minimumSize: Size.zero,
+                tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              ),
+            ),
             textTheme: TextTheme(
               headlineSmall: GoogleFonts.montserrat(
                 color: AppColors.mainTextColor,

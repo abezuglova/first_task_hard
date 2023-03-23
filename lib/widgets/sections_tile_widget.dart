@@ -8,14 +8,17 @@ class SectionsTileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
-    return TileWidget(
-      rotateAngle: -3.75,
-      tileWidth: 175.49.w,
-      tileHeight: 73.81.h,
-      child: Center(
-        child: Text(
-          'Секции',
-          style: textTheme.headlineSmall,
+    return GestureDetector(
+      onTap: () {},
+      child: TileWidget(
+        rotateAngle: -3.75,
+        tileWidth: 175.49.w,
+        tileHeight: 73.81.h,
+        child: Center(
+          child: Text(
+            'Секции',
+            style: textTheme.headlineSmall,
+          ),
         ),
       ),
     );
