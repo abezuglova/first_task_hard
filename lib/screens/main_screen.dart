@@ -8,6 +8,7 @@ import 'package:first_task_hard/widgets/sections_tile_widget.dart';
 import 'package:first_task_hard/widgets/shift_tile_widget.dart';
 import 'package:first_task_hard/widgets/timetable_tile_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
@@ -17,51 +18,51 @@ class MainScreen extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.white,
         body: Stack(
-          children: const [
+          children: [
             Positioned(
-              left: 10.5,
-              top: 93.11,
-              child: CoinBalanceTileWidget(),
+              left: 10.5.w,
+              top: 93.11.h,
+              child: const CoinBalanceTileWidget(),
             ),
             Positioned(
-              left: 313.03,
-              top: 75.39,
-              child: ProfileTileWidget(),
+              left: 313.03.w,
+              top: 75.39.h,
+              child: const ProfileTileWidget(),
             ),
             Positioned(
-              left: 103.09,
-              top: 211,
-              child: LevelTileWidget(),
+              left: 103.09.w,
+              top: 211.h,
+              child: const LevelTileWidget(),
             ),
             Positioned(
-              left: 23.14,
-              top: 358.23,
-              child: TimetableTileWidget(),
+              left: 23.14.w,
+              top: 358.23.h,
+              child: const TimetableTileWidget(),
             ),
             Positioned(
-              left: 22,
-              top: 455.9,
-              child: ShiftTileWidget(),
+              left: 22.w,
+              top: 455.9.h,
+              child: const ShiftTileWidget(),
             ),
             Positioned(
-              left: 386.84,
-              top: 452.62,
-              child: EmptyTileWidget(),
+              left: 386.84.w,
+              top: 452.62.h,
+              child: const EmptyTileWidget(),
             ),
             Positioned(
-              left: 17.75,
-              top: 638.46,
-              child: CrystalBalanceTileWidget(),
+              left: 17.75.w,
+              top: 638.46.h,
+              child: const CrystalBalanceTileWidget(),
             ),
             Positioned(
-              left: 208,
-              top: 645.46,
-              child: SectionsTileWidget(),
+              left: 208.w,
+              top: 645.46.h,
+              child: const SectionsTileWidget(),
             ),
             Positioned(
-              left: 215.99,
-              top: 727,
-              child: MyShiftsTileWidget(),
+              left: 215.99.w,
+              top: 727.h,
+              child: const MyShiftsTileWidget(),
             ),
           ],
         ));

@@ -1,6 +1,7 @@
 import 'package:first_task_hard/assets/app_colors.dart';
 import 'package:first_task_hard/widgets/tile_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ShiftTileWidget extends StatelessWidget {
   const ShiftTileWidget({super.key});
@@ -9,8 +10,8 @@ class ShiftTileWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return TileWidget(
       rotateAngle: -2.76,
-      tileWidth: 354,
-      tileHeight: 168.13,
+      tileWidth: 354.w,
+      tileHeight: 168.13.h,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

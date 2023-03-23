@@ -2,6 +2,8 @@ import 'package:first_task_hard/assets/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 class TileWidget extends StatelessWidget {
   final double rotateAngle;
   final double tileWidth;
@@ -21,14 +23,14 @@ class TileWidget extends StatelessWidget {
       child: Container(
         width: tileWidth,
         height: tileHeight,
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.all(Radius.circular(20)),
+          borderRadius: BorderRadius.all(Radius.circular(20.r)),
           boxShadow: [
             BoxShadow(
               color: AppColors.shadowColor,
-              blurRadius: 6,
-              offset: Offset(0, 0),
+              blurRadius: 6.r,
+              offset: const Offset(0, 0),
             ),
           ],
         ),
