@@ -1,4 +1,5 @@
 import 'package:first_task_hard/widgets/coin_balance_tile_widget.dart';
+import 'package:first_task_hard/widgets/crystal_balance_tile_widget.dart';
 import 'package:first_task_hard/widgets/level_tile_widget.dart';
 import 'package:first_task_hard/widgets/profile_tile_widget.dart';
 import 'package:first_task_hard/widgets/shift_tile_widget.dart';
@@ -29,6 +30,9 @@ class MainScreen extends StatelessWidget {
               ),
               Positioned(
                 child: ShiftTileWidget(),
+              ),
+              Positioned(
+                child: CrystalBalanceTileWidget(),
               ),
             ],
           ),

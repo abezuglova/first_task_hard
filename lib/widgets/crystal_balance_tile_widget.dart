@@ -6,6 +6,19 @@ class CrystalBalanceTileWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Placeholder();
+    return TileWidget(
+      rotateAngle: 1.51,
+      tileWidth: 164.09,
+      tileHeight: 169.63,
+      child: Column(
+        children: [
+          const Text('Баланс кристаллов: 200 💎'),
+          ElevatedButton(
+            onPressed: () {},
+            child: const Text('Потратить'),
+          ),
+        ],
+      ),
+    );
   }
 }
