@@ -5,11 +5,12 @@ class TileWidget extends StatelessWidget {
   final double rotateAngle;
   final double tileWidth;
   final double tileHeight;
+  final Widget child;
   const TileWidget({
     super.key,
     required this.rotateAngle,
     required this.tileWidth,
-    required this.tileHeight,
+    required this.tileHeight, required this.child,
   });
 
   @override
@@ -30,6 +31,7 @@ class TileWidget extends StatelessWidget {
             ),
           ],
         ),
+        child: child,
       ),
     );
   }

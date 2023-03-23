@@ -1,3 +1,4 @@
+import 'package:first_task_hard/assets/app_colors.dart';
 import 'package:first_task_hard/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.buttonColor,
+            foregroundColor: AppColors.buttonTextColor,
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(15)),
+            ),
+            elevation: 0,
+          ),
+        ),
       ),
       home: const MainScreen(),
     );
