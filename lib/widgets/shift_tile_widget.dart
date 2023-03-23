@@ -8,7 +8,7 @@ class ShiftTileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TileWidget(
-      rotateAngle: 2.76,
+      rotateAngle: -2.76,
       tileWidth: 354,
       tileHeight: 168.13,
       child: Column(

@@ -7,7 +7,7 @@ class MyShiftsTileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const TileWidget(
-      rotateAngle: -2.32,
+      rotateAngle: 2.32,
       tileWidth: 175.49,
       tileHeight: 73.81,
       child: Text('Мои смены'),

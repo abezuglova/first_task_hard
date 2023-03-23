@@ -7,7 +7,7 @@ class CrystalBalanceTileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TileWidget(
-      rotateAngle: 1.51,
+      rotateAngle: -1.51,
       tileWidth: 164.09,
       tileHeight: 169.63,
       child: Column(

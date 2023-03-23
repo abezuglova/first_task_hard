@@ -7,7 +7,7 @@ class CoinBalanceTileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TileWidget(
-      rotateAngle: 5.79,
+      rotateAngle: -5.79,
       tileWidth: 254,
       tileHeight: 122,
       child: Column(

@@ -8,7 +8,7 @@ class TimetableTileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TileWidget(
-      rotateAngle: 0.25,
+      rotateAngle: -0.25,
       tileWidth: 298.44,
       tileHeight: 65.59,
       child: Row(

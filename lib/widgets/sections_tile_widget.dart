@@ -1,8 +1,8 @@
 import 'package:first_task_hard/widgets/tile_widget.dart';
 import 'package:flutter/material.dart';
 
-class SectionTileWidget extends StatelessWidget {
-  const SectionTileWidget({super.key});
+class SectionsTileWidget extends StatelessWidget {
+  const SectionsTileWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

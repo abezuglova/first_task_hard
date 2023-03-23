@@ -7,7 +7,7 @@ class ProfileTileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const TileWidget(
-      rotateAngle: -27.76,
+      rotateAngle: 27.76,
       tileWidth: 112.92,
       tileHeight: 89.56,
       child: Center(

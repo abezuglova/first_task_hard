@@ -7,7 +7,7 @@ class EmptyTileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const TileWidget(
-      rotateAngle: 2.76,
+      rotateAngle: -2.76,
       tileWidth: 339.49,
       tileHeight: 155.84,
       child: SizedBox(),

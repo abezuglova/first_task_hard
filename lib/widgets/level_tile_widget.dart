@@ -8,7 +8,7 @@ class LevelTileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TileWidget(
-      rotateAngle: -4.58,
+      rotateAngle: 4.58,
       tileWidth: 301.66,
       tileHeight: 122,
       child: Column(
