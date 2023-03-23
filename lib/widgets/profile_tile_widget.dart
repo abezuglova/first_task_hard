@@ -7,12 +7,16 @@ class ProfileTileWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = Theme.of(context).textTheme;
     return TileWidget(
       rotateAngle: 27.76,
       tileWidth: 112.92.w,
       tileHeight: 89.56.h,
-      child: const Center(
-        child: Text('Профиль'),
+      child: Center(
+        child: Text(
+          'Профиль',
+          style: textTheme.headlineSmall,
+        ),
       ),
     );
   }

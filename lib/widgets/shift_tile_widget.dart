@@ -8,6 +8,7 @@ class ShiftTileWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = Theme.of(context).textTheme;
     return TileWidget(
       rotateAngle: -2.76,
       tileWidth: 354.w,
@@ -15,15 +16,24 @@ class ShiftTileWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             'Сейчас идёт',
-            style: TextStyle(color: AppColors.redTextColor),
+            style: textTheme.bodySmall!.copyWith(color: AppColors.redTextColor),
           ),
-          const Text('1 смена 2022'),
-          const Text('Корпус №3       Отряд №2'),
+          Text(
+            '1 смена 2022',
+            style: textTheme.headlineLarge,
+          ),
+          Text(
+            'Корпус №3       Отряд №2',
+            style: textTheme.bodySmall,
+          ),
           ElevatedButton(
             onPressed: () {},
-            child: const Text('Чат отряда (3 сообщ.)'),
+            child: Text(
+              'Чат отряда (3 сообщ.)',
+              style: textTheme.labelSmall,
+            ),
           ),
         ],
       ),

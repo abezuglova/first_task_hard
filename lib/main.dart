@@ -2,6 +2,7 @@ import 'package:first_task_hard/assets/app_colors.dart';
 import 'package:first_task_hard/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,6 +30,38 @@ class MyApp extends StatelessWidget {
                 elevation: 0,
               ),
             ),
+            textTheme: TextTheme(
+              headlineSmall: GoogleFonts.montserrat(
+                color: AppColors.mainTextColor,
+                fontSize: 20.sp,
+                fontWeight: FontWeight.bold,
+                letterSpacing: -0.33,
+              ),
+              headlineMedium: GoogleFonts.montserrat(
+                color: AppColors.mainTextColor,
+                fontSize: 26.sp,
+                fontWeight: FontWeight.bold,
+                letterSpacing: -0.33,
+              ),
+              headlineLarge: GoogleFonts.montserrat(
+                color: AppColors.mainTextColor,
+                fontSize: 28.sp,
+                fontWeight: FontWeight.bold,
+                letterSpacing: -0.33,
+              ),
+              bodySmall: GoogleFonts.montserrat(
+                color: AppColors.mainTextColor,
+                fontSize: 15.sp,
+                fontWeight: FontWeight.w600,
+                letterSpacing: -0.33,
+              ),
+              labelSmall: GoogleFonts.leagueSpartan(
+                color: AppColors.buttonTextColor,
+                fontSize: 15.sp,
+                fontWeight: FontWeight.w600,
+                letterSpacing: -0.33,
+              ),
+            ).apply(fontSizeFactor: 1.sp),
           ),
           home: const MainScreen(),
         );
@@ -40,3 +73,4 @@ class MyApp extends StatelessWidget {
 // 10:15 - 10:55
 // 11:00 - 12:00
 // 12:05 - 12:45
+// 12:50 - 

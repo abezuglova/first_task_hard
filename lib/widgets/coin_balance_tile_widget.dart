@@ -7,16 +7,23 @@ class CoinBalanceTileWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = Theme.of(context).textTheme;
     return TileWidget(
       rotateAngle: -5.79,
       tileWidth: 254.w,
       tileHeight: 122.h,
       child: Column(
         children: [
-          const Text('Баланс монет: 1500 💸'),
+          Text(
+            'Баланс монет: 1500 💸',
+            style: textTheme.headlineSmall,
+          ),
           ElevatedButton(
             onPressed: () {},
-            child: const Text('Потратить'),
+            child: Text(
+              'Потратить',
+              style: textTheme.labelSmall,
+            ),
           ),
         ],
       ),

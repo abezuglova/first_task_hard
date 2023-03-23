@@ -7,16 +7,23 @@ class CrystalBalanceTileWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = Theme.of(context).textTheme;
     return TileWidget(
       rotateAngle: -1.51,
       tileWidth: 164.09.w,
       tileHeight: 169.63.h,
       child: Column(
         children: [
-          const Text('Баланс кристаллов: 200 💎'),
+          Text(
+            'Баланс кристаллов: 200 💎',
+            style: textTheme.headlineSmall,
+          ),
           ElevatedButton(
             onPressed: () {},
-            child: const Text('Потратить'),
+            child: Text(
+              'Потратить',
+              style: textTheme.labelSmall,
+            ),
           ),
         ],
       ),

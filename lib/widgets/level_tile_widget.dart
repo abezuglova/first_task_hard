@@ -8,13 +8,17 @@ class LevelTileWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = Theme.of(context).textTheme;
     return TileWidget(
       rotateAngle: 4.58,
       tileWidth: 301.66.w,
       tileHeight: 122.h,
       child: Column(
         children: [
-          const Text('Уровень достижений: 5'),
+          Text(
+            'Уровень достижений: 5',
+            style: textTheme.headlineSmall,
+          ),
           SizedBox(height: 20.h),
           Stack(
             children: [
