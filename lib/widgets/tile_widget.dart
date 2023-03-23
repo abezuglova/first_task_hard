@@ -1,5 +1,6 @@
 import 'package:first_task_hard/assets/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'dart:math' as math;
 
 class TileWidget extends StatelessWidget {
   final double rotateAngle;
@@ -16,7 +17,7 @@ class TileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Transform.rotate(
-      angle: rotateAngle,
+      angle: rotateAngle * math.pi / 180,
       child: Container(
         width: tileWidth,
         height: tileHeight,

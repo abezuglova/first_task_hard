@@ -10,7 +10,7 @@ class EmptyTileWidget extends StatelessWidget {
       rotateAngle: 2.76,
       tileWidth: 339.49,
       tileHeight: 155.84,
-      child: Placeholder(),
+      child: SizedBox(),
     );
   }
 }
