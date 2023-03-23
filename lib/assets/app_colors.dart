@@ -6,4 +6,5 @@ class AppColors {
   static const redTextColor = Color(0xFFE6492D);
   static const buttonColor = Color(0xFFEDEFFF);
   static const progressColor = Color(0xFFAAFF82);
+  static const shadowColor = Color.fromRGBO(77, 93, 250, 0.3);
 }
