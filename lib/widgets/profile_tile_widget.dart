@@ -15,7 +15,7 @@ class _ProfileTileWidgetState extends State<ProfileTileWidget>
   late final AnimationController _controller = AnimationController(
     duration: const Duration(seconds: 10),
     vsync: this,
-  );
+  )..repeat();
 
   @override
   void dispose() {
