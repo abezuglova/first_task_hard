@@ -46,6 +46,44 @@ class _TimetableTileWidgetState extends State<TimetableTileWidget>
     });
   }
 
+  final Animatable<Color?> _shadow = TweenSequence<Color?>([
+    TweenSequenceItem(
+      weight: 1.0,
+      tween: ColorTween(
+        begin: Colors.yellow,
+        end: Colors.green,
+      ),
+    ),
+    TweenSequenceItem(
+      weight: 1.0,
+      tween: ColorTween(
+        begin: Colors.green,
+        end: Colors.blue,
+      ),
+    ),
+    TweenSequenceItem(
+      weight: 1.0,
+      tween: ColorTween(
+        begin: Colors.blue,
+        end: Colors.purple,
+      ),
+    ),
+    TweenSequenceItem(
+      weight: 1.0,
+      tween: ColorTween(
+        begin: Colors.purple,
+        end: Colors.pink,
+      ),
+    ),
+    TweenSequenceItem(
+      weight: 1.0,
+      tween: ColorTween(
+        begin: Colors.pink,
+        end: Colors.red,
+      ),
+    ),
+  ]);
+
   @override
   void dispose() {
     _controller.dispose();
@@ -72,18 +110,33 @@ class _TimetableTileWidgetState extends State<TimetableTileWidget>
           rotateAngle: _rotateAnimation.value,
           tileWidth: _sizeAnimation.value.dx,
           tileHeight: _sizeAnimation.value.dy,
-          child: Padding(
+          child: Container(
+            width: _sizeAnimation.value.dx,
+            height: _sizeAnimation.value.dy,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.all(Radius.circular(20.r)),
+              boxShadow: [
+                BoxShadow(
+                  color: _shadow
+                      .evaluate(AlwaysStoppedAnimation(_controller.value))!,
+                  blurRadius: 10.r,
+                  spreadRadius: 3.r,
+                  offset: const Offset(0, 0),
+                ),
+              ],
+            ),
             padding: EdgeInsets.symmetric(horizontal: 12.w),
             child: _controller.isAnimating
                 ? null
                 : _controller.isCompleted
                     ? Center(
-                      child: Text(
+                        child: Text(
                           'Здесь будет расписание',
                           style: textTheme.headlineLarge,
                           textAlign: TextAlign.center,
                         ),
-                    )
+                      )
                     : Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
