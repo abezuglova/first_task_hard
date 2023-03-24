@@ -76,6 +76,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-// 10:00 - 14:20
-// 14:50 - 
