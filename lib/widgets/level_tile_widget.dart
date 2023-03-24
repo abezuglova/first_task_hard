@@ -13,13 +13,16 @@ class LevelTileWidget extends StatefulWidget {
 class _LevelTileWidgetState extends State<LevelTileWidget>
     with TickerProviderStateMixin {
   late final AnimationController _controller = AnimationController(
-    duration: const Duration(milliseconds: 500),
+    duration: const Duration(milliseconds: 2000),
     vsync: this,
-  )..repeat(reverse: true);
-  late final Animation<double> _animation = CurvedAnimation(
+  );
+  late final Animation<double> _curveAnimation = Tween(
+    begin: 1.0,
+    end: 0.5,
+  ).animate(CurvedAnimation(
     parent: _controller,
     curve: Curves.easeInOut,
-  );
+  ));
 
   @override
   void dispose() {
@@ -34,7 +37,7 @@ class _LevelTileWidgetState extends State<LevelTileWidget>
       left: 97.74.w,
       top: 222.85.h,
       child: ScaleTransition(
-        scale: _animation,
+        scale: _curveAnimation,
         child: GestureDetector(
           onTap: () {
             _controller.isAnimating

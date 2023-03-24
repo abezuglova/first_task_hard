@@ -21,7 +21,7 @@ class _SectionsTileWidgetState extends State<SectionsTileWidget>
     _controller = AnimationController(
       vsync: this,
       duration: const Duration(
-        milliseconds: 300,
+        milliseconds: 2000,
       ),
     );
 

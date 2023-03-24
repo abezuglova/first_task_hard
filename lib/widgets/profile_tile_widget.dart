@@ -13,7 +13,7 @@ class ProfileTileWidget extends StatefulWidget {
 class _ProfileTileWidgetState extends State<ProfileTileWidget>
     with TickerProviderStateMixin {
   late final AnimationController _controller = AnimationController(
-    duration: const Duration(milliseconds: 500),
+    duration: const Duration(milliseconds: 2000),
     vsync: this,
   );
 

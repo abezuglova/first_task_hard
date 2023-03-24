@@ -13,7 +13,8 @@ class TileWidget extends StatelessWidget {
     super.key,
     required this.rotateAngle,
     required this.tileWidth,
-    required this.tileHeight, required this.child,
+    required this.tileHeight,
+    required this.child,
   });
 
   @override
@@ -29,7 +30,7 @@ class TileWidget extends StatelessWidget {
           boxShadow: [
             BoxShadow(
               color: AppColors.shadowColor,
-              blurRadius: 6.r,
+              blurRadius: 5.r,
               offset: const Offset(0, 0),
             ),
           ],

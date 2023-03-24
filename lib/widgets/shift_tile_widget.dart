@@ -11,7 +11,7 @@ class ShiftTileWidget extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
     return Positioned(
       left: 25.84.w,
-      top: 447.28.h,
+      top: 444.28.h,
       child: TileWidget(
         rotateAngle: -2.76,
         tileWidth: 354.w,

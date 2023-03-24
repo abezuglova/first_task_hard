@@ -21,11 +21,11 @@ class MainScreen extends StatelessWidget {
             CoinBalanceTileWidget(),
             ProfileTileWidget(),
             LevelTileWidget(),
-            TimetableTileWidget(),
             ShiftTileWidget(),
             EmptyTileWidget(),
             CrystalBalanceTileWidget(),
             SectionsTileWidget(),
+            TimetableTileWidget(),
             MyShiftsTileWidget(),
           ],
         ));
