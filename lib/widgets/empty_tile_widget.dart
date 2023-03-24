@@ -7,11 +7,15 @@ class EmptyTileWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TileWidget(
-      rotateAngle: -2.76,
-      tileWidth: 339.49.w,
-      tileHeight: 155.84.h,
-      child: const SizedBox(),
+    return Positioned(
+      left: 390.4.w,
+      top: 444.36.h,
+      child: TileWidget(
+        rotateAngle: -2.76,
+        tileWidth: 339.49.w,
+        tileHeight: 155.84.h,
+        child: const SizedBox(),
+      ),
     );
   }
 }
