@@ -14,8 +14,8 @@ class _TimetableTileWidgetState extends State<TimetableTileWidget>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<Offset> _sizeAnimation;
-  late Animation _positionAnimation;
-  late Animation _rotateAnimation;
+  late Animation<Offset> _positionAnimation;
+  late Animation<double> _rotateAnimation;
 
   @override
   void initState() {

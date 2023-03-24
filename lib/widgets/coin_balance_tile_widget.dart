@@ -14,7 +14,7 @@ class CoinBalanceTileWidget extends StatefulWidget {
 class _CoinBalanceTileWidgetState extends State<CoinBalanceTileWidget>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-  late Animation _shakeAnimation;
+  late Animation<double> _shakeAnimation;
 
   @override
   void initState() {

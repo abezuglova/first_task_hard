@@ -14,10 +14,10 @@ class ShiftTileWidget extends StatefulWidget {
 class _ShiftTileWidgetState extends State<ShiftTileWidget>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-  late Animation _sizeAnimation;
-  late Animation _buttonPositionAnimation;
-  late Animation _rotateAnimation;
-  late Animation _buttonRotateAnimation;
+  late Animation<Offset> _sizeAnimation;
+  late Animation<Offset> _buttonPositionAnimation;
+  late Animation<double> _rotateAnimation;
+  late Animation<double> _buttonRotateAnimation;
   late Animation<Color?> _colorAnimation;
   @override
   void initState() {

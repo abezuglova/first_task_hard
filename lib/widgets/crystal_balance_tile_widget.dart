@@ -14,7 +14,7 @@ class CrystalBalanceTileWidget extends StatefulWidget {
 class _CrystalBalanceTileWidgetState extends State<CrystalBalanceTileWidget>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-  late Animation _shakeAnimation;
+  late Animation<double> _shakeAnimation;
 
   @override
   void initState() {
