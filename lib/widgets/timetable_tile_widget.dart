@@ -1,13 +1,16 @@
 import 'package:first_task_hard/assets/app_colors.dart';
 import 'package:first_task_hard/widgets/tile_widget.dart';
+import 'package:first_task_hard/widgets/timetable_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter/scheduler.dart' show timeDilation;
 
 class TimetableTileWidget extends StatelessWidget {
   const TimetableTileWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
+    timeDilation = 10.0;
     final textTheme = Theme.of(context).textTheme;
     return TileWidget(
       rotateAngle: -0.25,
@@ -23,7 +26,15 @@ class TimetableTileWidget extends StatelessWidget {
               style: textTheme.headlineMedium,
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute<void>(
+                    builder: (context) {
+                      return const TimetableWidget();
+                    },
+                  ),
+                );
+              },
               child: const Icon(
                 Icons.arrow_forward,
                 color: AppColors.mainTextColor,
