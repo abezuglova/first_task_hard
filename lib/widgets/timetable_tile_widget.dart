@@ -13,7 +13,7 @@ class TimetableTileWidget extends StatefulWidget {
 class _TimetableTileWidgetState extends State<TimetableTileWidget>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-  late Animation _sizeAnimation;
+  late Animation<Offset> _sizeAnimation;
   late Animation _positionAnimation;
   late Animation _rotateAnimation;
 

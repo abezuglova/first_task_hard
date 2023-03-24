@@ -25,7 +25,7 @@ class _ShiftTileWidgetState extends State<ShiftTileWidget>
 
     _controller = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 1500),
+      duration: const Duration(milliseconds: 1000),
     );
 
     _sizeAnimation = Tween<Offset>(
